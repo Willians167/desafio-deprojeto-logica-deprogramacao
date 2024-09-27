@@ -41,6 +41,22 @@ No final da jornada, o saldo de vitórias e derrotas é calculado, e o rank é m
 ```
 "O Herói tem um saldo de **{saldoVitorias}** e está no nível de **{nivel}**"
 ```
+## 3️ Escrevendo as classes de um Jogo
+
+Neste desafio, criamos uma classe `Heroi` que permite representar um herói com as seguintes propriedades: `nome`, `idade`, e `tipo`. O tipo do herói determina o tipo de ataque que ele executa, conforme a tabela abaixo:
+
+- **Mago**: usa magia.
+- **Guerreiro**: usa espada.
+- **Monge**: usa artes marciais.
+- **Ninja**: usa shuriken.
+
+### Exemplo de Saída:
+- "O mago atacou usando magia"
+- "O guerreiro atacou usando espada"
+- "O monge atacou usando artes marciais"
+- "O ninja atacou usando shuriken"
+
+O código foi estruturado utilizando Classes e Objetos, permitindo a criação de instâncias de heróis e o uso de métodos para realizar ações dentro do jogo.
 
 ## 🚀 Como rodar o projeto:
 
