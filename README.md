@@ -1,83 +1,80 @@
+Aqui está a versão atualizada do **README** com a adição da funcionalidade de partidas ranqueadas:
 
 ---
 
-# 🦸‍♂️ Jornada do Herói
+# 🛡️ A Jornada de Aragorn 🏹
 
-![Hero Icon](https://img.icons8.com/emoji/48/000000/man-superhero.png) **Bem-vindo à Jornada do Herói!**  
-Neste projeto, você acompanhará o valente **Aragorn** em uma jornada épica, cheia de inimigos perigosos 🐉, tesouros escondidos 💎, e decisões importantes que moldarão o destino do herói.
+**Bem-vindo(a) à aventura de Aragorn!**  
+Neste projeto, você acompanhará Aragorn, um bravo herói, em sua jornada épica, enfrentando inimigos, encontrando tesouros e superando desafios no caminho. O destino dele está em suas mãos! 🌟
 
-## 🎯 Objetivo do Projeto
+## 🎮 Como funciona o jogo?
 
-Simular a jornada de um herói com variáveis, operadores, laços de repetição e estruturas de decisão em JavaScript. O herói enfrentará desafios enquanto você decide se ele deve continuar ou encerrar sua missão.
+- Você controla Aragorn, um herói que começa sua aventura com 100 de energia.
+- Durante a jornada, eventos aleatórios ocorrerão: inimigos poderão aparecer, tesouros serão encontrados ou o caminho poderá ficar tranquilo por um tempo.
+- A cada inimigo derrotado, Aragorn perde energia, mas ganha experiência e pode encontrar tesouros que o fortalecem! ⚔️💰
+- No final de cada evento, você decidirá se Aragorn continuará a jornada ou se encerrará a aventura.
 
-## 🛠️ Configurações para rodar o projeto
+### 📋 Funcionalidades principais:
 
-### Requisitos
+- **Herói**: Aragorn, o bravo herói.
+- **Eventos aleatórios**: Inimigos, tesouros, caminhos tranquilos.
+- **Status**: O status de Aragorn é atualizado após cada evento, mostrando energia, inimigos derrotados e tesouros encontrados.
 
-- **Node.js** (se não tiver, [baixe aqui](https://nodejs.org/))
-- Clone ou baixe este repositório.
+### 🏅 Rank de Partidas Rankeadas
 
-### Passos para rodar:
+Aragorn agora também participa de partidas **rankeadas**! A cada inimigo derrotado, o jogador ganha vitórias ou derrotas, acumulando pontos de rank.
 
-1. **Clone este repositório:**
+### ⚔️ Sistema de Rank:
 
+O rank de Aragorn será classificado com base no número de vitórias que ele acumular ao longo da jornada:
+
+- **Ferro**: Menos de 10 vitórias.
+- **Bronze**: Entre 11 e 20 vitórias.
+- **Prata**: Entre 21 e 50 vitórias.
+- **Ouro**: Entre 51 e 80 vitórias.
+- **Diamante**: Entre 81 e 90 vitórias.
+- **Lendário**: Entre 91 e 100 vitórias.
+- **Imortal**: 101 vitórias ou mais.
+
+No final da jornada, o saldo de vitórias e derrotas é calculado, e o rank é mostrado em uma mensagem como:
+
+```
+"O Herói tem um saldo de **{saldoVitorias}** e está no nível de **{nivel}**"
+```
+
+## 🚀 Como rodar o projeto:
+
+1. **Pré-requisitos**: Certifique-se de ter o Node.js instalado em sua máquina.
+2. **Instale as dependências** (caso necessário):
    ```bash
-   git clone https://github.com/Willians167/desafio-deprojeto-logica-deprogramacao.git
+   npm install
    ```
-
-2. **Navegue até o diretório:**
-
-   ```bash
-   cd jornada-do-heroi
-   ```
-
-3. **Rode o código com Node.js:**
-
+3. **Execute o projeto**:
    ```bash
    node index.js
    ```
+4. A jornada de Aragorn começará automaticamente, e você será perguntado se deseja continuar após cada evento.
 
-4. **Prepare-se para viver uma aventura!** Cada decisão sua pode impactar a vida do herói! 💀🛡️
+## 📜 Código Explicado:
 
-## 🧭 Como funciona a Jornada do Herói?
+- **Variáveis**:
+  - `heroi`: Nome do herói (Aragorn).
+  - `energia`: A quantidade de energia que Aragorn tem (inicia com 100).
+  - `inimigosDerrotados`: Número de inimigos derrotados.
+  - `tesourosEncontrados`: Número de tesouros encontrados.
+  
+- **Funções**:
+  - `statusHeroi()`: Exibe o status atual do herói (energia, inimigos derrotados, tesouros).
+  - `continuarJornada()`: Pergunta ao jogador se ele deseja continuar a jornada.
+  - `iniciarJornada()`: Inicia a jornada, criando eventos aleatórios e atualizando o status do herói.
+  - `finalizarJornada()`: Mostra os resultados finais da jornada e encerra o jogo.
 
-Durante a jornada, três eventos principais podem acontecer:
-
-1. 🐉 **Inimigo apareceu!** - O herói pode lutar contra o inimigo com 70% de chance de vitória. Mas, se ele perder, a energia dele acaba e a jornada termina.
-2. 💰 **Tesouro encontrado!** - O herói pode encontrar um tesouro que restaura sua energia.
-3. 🛤️ **Caminho tranquilo...** - O herói continua sua jornada sem problemas, mas perde um pouco de energia pelo caminho.
-
-### 🎮 Controle do jogador:
-
-Você decide se o herói **continua** ou **encerra** sua jornada após cada evento:
-
-- Quando perguntado: `Deseja continuar a jornada? (sim/não)`, digite:
-  - `sim` para continuar a jornada
-  - `não` para finalizar a aventura
-
-## 🛡️ Funcionalidades
-
-- **Energia do herói** ⚡: Inicialmente 100, ela aumenta ou diminui conforme o herói encontra tesouros ou luta com inimigos.
-- **Derrotas de inimigos** ⚔️: O número de inimigos derrotados pelo herói.
-- **Tesouros encontrados** 💎: Quantidade de tesouros que o herói achou durante a jornada.
-
-## 🔍 Exemplo de execução:
-
-```bash
-Aragorn iniciou sua jornada!
-Você encontrou um tesouro!
-Herói: Aragorn
-Energia: 110
-Inimigos derrotados: 0
-Tesouros encontrados: 1
------------------------------
-Deseja continuar a jornada? (sim/não)
-```
-
-## 👾 Contribuições
-
-Sinta-se à vontade para contribuir com melhorias no código, adicionar novos eventos, ou até mesmo criar novos heróis! 🦸‍♀️
+- **Rank de Partidas Rankeadas**: Classifica o jogador com base no número de vitórias e derrotas usando a fórmula `(vitórias - derrotas)` e determina o nível do herói.
 
 ---
 
-🌟 **Divirta-se nesta jornada épica e boa sorte em suas aventuras!**
+💡 **Dica**: Faça o máximo de vitórias possíveis para alcançar o rank **Imortal** e torne-se uma lenda!
+
+---
+
+Espero que este README organize e explique tudo de forma clara e divertida!
